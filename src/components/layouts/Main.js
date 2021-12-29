@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Main = () => {
     return (
         <>
-            <div className="container d-flex">
+            <div className="container d-flex flex-wrap">
                 <Link className="col-md-3 d-flex p-5 align-items-center justify-content-center text-decoration-none">
                     <i className="bi bi-wallet2 py-2 px-3" style={{ color: '#6ec1e4', fontSize: '30px', fontWeight: 'bold', borderRadius: '50%', border: '2px solid #6ec1e4' }}></i>
                     <div className="text-white mx-3" style={{ letterSpacing: '0px' }}>

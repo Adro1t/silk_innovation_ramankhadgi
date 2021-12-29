@@ -11,7 +11,7 @@ const DashBoard = () => {
         <>
             <Navbar />
             
-            <div className="container my-3 d-flex" style={{ display: 'flex',height:'350px' }}>
+            <div className="container my-3 d-flexWrap" style={{ display: 'flex',height:'350px' }}>
                 <div className="col-md-2">
                     <List />
                 </div>
@@ -20,7 +20,7 @@ const DashBoard = () => {
                 </div>
             </div>
 
-            <div className="container-fluid mt-5 d-flex" style={{ backgroundColor: '#252525' }}>
+            <div className="container-fluid mt-5" style={{ backgroundColor: '#252525' }}>
                 <Main />
             </div>
             <Services/>

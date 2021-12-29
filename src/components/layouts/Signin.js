@@ -66,6 +66,7 @@ const Signin = () => {
             {redirectUser()}
             <form class="col-md-5 offset-md-1">
                 <h3 style={{ color: '#132c5e', fontWeight: 'bold' }}>Login</h3>
+                <p className="text-danger">Dont use Phone Number and PIN</p>
                 <label className="mt-1" style={{ color: '#505a74' }} >Email Address/Phone Number</label>
                 <input className="mb-1" type="text" style={{ width: '100%' }} onChange={handleChange('email')} value={email} required/>
                 <label className="mt-1" style={{ color: '#505a74' }}>Password/PIN</label>

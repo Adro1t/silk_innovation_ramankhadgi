@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
-import { isAuthenticated,signout } from '../auth'
+import { isAuthenticated, signout } from '../auth'
 
 
 
@@ -27,13 +27,13 @@ const Navbar = (history) => {
                                 </div>
                             </form>
                         </div>
-                        <div className="col-md-1">
+                        <div className="col-md-1 ">
                             <p className="text-center" style={{ color: 'black', fontWeight: 'bold' }}>Call Us<br />
                                 9844363201
                             </p>
                         </div>
                         <div className="col-md-3">
-                            <ul className="d-flex">
+                            <ul className="d-flex flex-wrap">
 
 
 
@@ -46,7 +46,7 @@ const Navbar = (history) => {
 
                                 )}
 
-                                {!isAuthenticated() && (
+                                {isAuthenticated() && (
 
                                     <li className="list-unstyled">
                                         <Link to="/login" className="text-decoration-none"><i class="bi bi-person p-3" style={{ color: 'black', fontSize: '25px' }}></i></Link>
@@ -80,7 +80,7 @@ const Navbar = (history) => {
 
 
                         <div className="container-fluid">
-                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button className="navbar-toggler d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -104,7 +104,9 @@ const Navbar = (history) => {
                             </div>
                         </div>
                     </nav>
+
                 </div>
+
 
             </div>
 

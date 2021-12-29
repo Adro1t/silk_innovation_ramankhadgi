@@ -11,7 +11,7 @@ const DashBoard = () => {
         <>
             <Navbar />
             
-            <div className="container my-3 d-flexWrap" style={{ display: 'flex',height:'350px' }}>
+            <div className="container my-3 d-flex flex-wrap" style={{ display: 'flex',height:'350px' }}>
                 <div className="col-md-2">
                     <List />
                 </div>

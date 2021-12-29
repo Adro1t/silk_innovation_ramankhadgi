@@ -4,7 +4,7 @@ import { isAuthenticated,signout } from '../auth'
 
 
 
-const Navbar = () => {
+const Navbar = (history) => {
     const { user: { name, email } } = isAuthenticated()
 
     return (
@@ -54,15 +54,15 @@ const Navbar = () => {
                                 )}
 
 
-                                {/* {isAuthenticated() && (
+                                {isAuthenticated() && (
                                     <li className="list-unstyled">
                                         <Link className="text-decoration-none" onClick={() => signout(() => {
-                                            history.push('/')
+                                            history.push('/login')
                                         })}>
                                             <i class="bi bi-door-open p-3" style={{ color: 'black', fontSize: '25px' }}></i>
                                         </Link>
                                     </li>
-                                )} */}
+                                )}
 
                                 <li className="list-unstyled">
                                     <Link to="" className="text-decoration-none"><i class="bi bi-basket p-3" style={{ color: 'black', fontSize: '25px' }}></i></Link>
@@ -112,4 +112,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default withRouter(Navbar)

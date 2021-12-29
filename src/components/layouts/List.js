@@ -9,7 +9,11 @@ const List = () => {
                 <li className="my-3"><Link className="text-decoration-none " style={{color:'#0948ff',fontWeight:'bold',fontSize:'18px' }}>Financial Payments</Link></li>
                 <li className="my-3"><Link className="text-decoration-none " style={{color:'#0948ff',fontWeight:'bold',fontSize:'18px' }}>Popular Payments</Link></li>
                 <li className="my-3"><Link className="text-decoration-none " style={{color:'#0948ff',fontWeight:'bold',fontSize:'18px' }}>Merchant Payments</Link></li>
-                <li className="my-3"><Link className="text-decoration-none " style={{color:'#0948ff',fontWeight:'bold',fontSize:'18px' }}>Credit Card Payment</Link></li>
+                <li className="my-3"><Link className="text-decoration-none " style={{color:'#0948ff',fontWeight:'bold',fontSize:'18px' }}>Credit Card Payments</Link></li>
+                <li className="my-3"><Link className="text-decoration-none " style={{color:'#0948ff',fontWeight:'bold',fontSize:'18px' }}>... Payments</Link></li>
+                <li className="my-3"><Link className="text-decoration-none " style={{color:'#0948ff',fontWeight:'bold',fontSize:'18px' }}>... Payments</Link></li>
+                <li className="my-3"><Link className="text-decoration-none " style={{color:'#0948ff',fontWeight:'bold',fontSize:'18px' }}>... Payments</Link></li>
+
             </ul>
         </>
     )
